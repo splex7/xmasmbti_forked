@@ -15,6 +15,7 @@ import Stage11 from "@components/stage/Stage11";
 import Stage12 from "@components/stage/Stage12";
 import styles from '@styles/components/Stage.module.css'
 import 'bootstrap/dist/css/bootstrap.css';
+import {useRouter} from "next/router";
 
 let mbtiStorage = {
     ie: [[0, 0], [0, 0], [0, 0]],
@@ -23,10 +24,12 @@ let mbtiStorage = {
     jp: [[0, 0], [0, 0], [0, 0]]
 };
 
+let result = '';
+
 export default function Stage() {
     const [stage, setStage] = useState(1);
     const [storage, setStorage] = useState(mbtiStorage);
-
+    const router = useRouter();
     return (
         <div className="container">
             <Head>
@@ -52,10 +55,61 @@ export default function Stage() {
                 <div>
                     {1 < stage && stage < 13 && <button className="btn btn-success" onClick={() => setStage(stage - 1)}>이전</button>}
                     {0 < stage && stage < 12 && <button className="btn btn-success" onClick={() => setStage(stage + 1)}>다음</button>}
+                    {stage && stage == 12 && <button className="btn btn-success" onClick={() => viewResult(router)}>결과보기</button>}
                 </div>
             </main>
 
             <Footer/>
         </div>
     )
+}
+
+function viewResult(router) {
+    /* 체크 안 한 부분 있는지 검사 */
+    let ie = mbtiStorage["ie"];
+    let sn = mbtiStorage["sn"];
+    let tf = mbtiStorage["tf"];
+    let jp = mbtiStorage["jp"];
+
+    for(let i=0; i<ie.length; i++) {
+       if(ie[i][0] == 0 || sn[i][0] == 0 || tf[i][0] == 0 || jp[i][0] == 0) {
+           alert("체크하지 않은 문항이 있습니다. 이전 단계로 돌아가서 확인해주세요!");
+           return;
+       }
+    }
+
+    /* 결과 산출 및 결과 페이지 이동 */
+    let sumIE = 0;
+    let sumSN = 0;
+    let sumTF = 0;
+    let sumJP = 0;
+    for(let i=0; i<ie.length; i++) {
+        sumIE += ie[i][1];
+        sumSN += sn[i][1];
+        sumTF += tf[i][1];
+        sumJP += jp[i][1];
+    }
+
+    if(sumIE < 0) {
+        result += 'I';
+    } else {
+        result += 'E';
+    }
+    if(sumSN < 0) {
+        result += 'S';
+    } else {
+        result += 'N';
+    }
+    if(sumTF < 0) {
+        result += 'T';
+    } else {
+        result += 'F';
+    }
+    if(sumJP < 0) {
+        result += 'J';
+    } else {
+        result += 'P';
+    }
+    console.log("mbtiStorage // " + JSON.stringify(mbtiStorage));
+    router.push('/result/' + result)
 }
