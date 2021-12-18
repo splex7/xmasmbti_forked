@@ -16,8 +16,16 @@ import Stage12 from "@components/stage/Stage12";
 import styles from '@styles/components/Stage.module.css'
 import 'bootstrap/dist/css/bootstrap.css';
 
+let mbtiStorage = {
+    ie: [[0, 0], [0, 0], [0, 0]],
+    sn: [[0, 0], [0, 0], [0, 0]],
+    tf: [[0, 0], [0, 0], [0, 0]],
+    jp: [[0, 0], [0, 0], [0, 0]]
+};
+
 export default function Stage() {
     const [stage, setStage] = useState(1);
+    const [storage, setStorage] = useState(mbtiStorage);
 
     return (
         <div className="container">
@@ -26,23 +34,25 @@ export default function Stage() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <main>
+            <main className={styles.main}>
                 <div className={styles.stage}>
-                    {stage == 1 && <Stage1/>}
-                    {stage == 2 && <Stage2/>}
-                    {stage == 3 && <Stage3/>}
-                    {stage == 4 && <Stage4/>}
-                    {stage == 5 && <Stage5/>}
-                    {stage == 6 && <Stage6/>}
-                    {stage == 7 && <Stage7/>}
-                    {stage == 8 && <Stage8/>}
-                    {stage == 9 && <Stage9/>}
-                    {stage == 10 && <Stage10/>}
-                    {stage == 11 && <Stage11/>}
-                    {stage == 12 && <Stage12/>}
+                    {stage == 1 && <Stage1 storage = {storage} />}
+                    {stage == 2 && <Stage2 storage = {storage}/>}
+                    {stage == 3 && <Stage3 storage = {storage}/>}
+                    {stage == 4 && <Stage4 storage = {storage}/>}
+                    {stage == 5 && <Stage5 storage = {storage}/>}
+                    {stage == 6 && <Stage6 storage = {storage}/>}
+                    {stage == 7 && <Stage7 storage = {storage}/>}
+                    {stage == 8 && <Stage8 storage = {storage}/>}
+                    {stage == 9 && <Stage9 storage = {storage}/>}
+                    {stage == 10 && <Stage10 storage = {storage}/>}
+                    {stage == 11 && <Stage11 storage = {storage}/>}
+                    {stage == 12 && <Stage12 storage = {storage}/>}
                 </div>
-                {1 < stage && stage < 13 && <button className="btn btn-success float-left" onClick={() => setStage(stage - 1)}>이전</button>}
-                {0 < stage && stage < 12 && <button className="btn btn-success float-right" onClick={() => setStage(stage + 1)}>다음</button>}
+                <div>
+                    {1 < stage && stage < 13 && <button className="btn btn-success" onClick={() => setStage(stage - 1)}>이전</button>}
+                    {0 < stage && stage < 12 && <button className="btn btn-success" onClick={() => setStage(stage + 1)}>다음</button>}
+                </div>
             </main>
 
             <Footer/>
