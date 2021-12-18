@@ -1,0 +1,22 @@
+.stage {
+    width: 100%;
+}
+
+.question {
+    width: 95%;
+}
+
+.choose {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.choose:hover, .choose:active {
+    background-color: #DA2340;
+    color: #eaeaea;
+    font-weight: bold;
+}

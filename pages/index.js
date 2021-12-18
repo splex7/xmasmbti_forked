@@ -1,23 +1,21 @@
 import Head from 'next/head'
-import Header from '@components/Header'
+import Main from '@components/Main'
 import Footer from '@components/Footer'
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    return (
+        <div className="container">
+            <Head>
+                <title>크리스마스 트리 MBTI</title>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
+            <main>
+                <Main/>
+            </main>
 
-      <Footer />
-    </div>
-  )
+            <Footer/>
+        </div>
+    )
 }
