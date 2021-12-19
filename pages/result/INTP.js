@@ -5,11 +5,13 @@ export default function INTP() {
     const mbti = {
         mbtiName : "INTP",
         treeName : "엉뚱하고 기발한 4차원 트리",
-        description : ["", "", "", "", ""],
-        carolSong : {
-            name : "",
-            reason : ""
-        },
+        description : [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         link : "/result/INTP",
         imgSrc : "/icon/mbti/intp.png"
     };

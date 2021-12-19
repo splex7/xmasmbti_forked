@@ -5,11 +5,13 @@ export default function ENTJ() {
     const mbti = {
         mbtiName : "ENTJ",
         treeName : "앞서가는 리더 트리",
-        description : ["", "", "", "", ""],
-        carolSong : {
-            name : "",
-            reason : ""
-        },
+        description : [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         link : "/result/INFJ",
         imgSrc : "/icon/mbti/entj.png"
     };

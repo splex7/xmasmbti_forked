@@ -5,11 +5,13 @@ export default function ENFP() {
     const mbti = {
         mbtiName : "ENFP",
         treeName : "활력 넘치는 에너자이저 트리",
-        description : ["", "", "", "", ""],
-        carolSong : {
-            name : "",
-            reason : ""
-        },
+        description : [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         link : "/result/ENFP",
         imgSrc : "/icon/mbti/enfp.png"
     };

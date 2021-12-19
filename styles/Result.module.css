@@ -4,8 +4,20 @@
 }
 
 /* components/result/Result.js */
+.main {
+    padding: 30px 0;
+}
+
 .description {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    background-color: #eaeaea;
+    opacity: 80%;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin: 10px 0;
 }

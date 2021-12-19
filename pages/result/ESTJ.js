@@ -5,11 +5,13 @@ export default function ESTJ() {
     const mbti = {
         mbtiName : "ESTJ",
         treeName : "실리에 밝은 카이저 트리",
-        description : ["", "", "", "", ""],
-        carolSong : {
-            name : "",
-            reason : ""
-        },
+        description : [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         link : "/result/ESTJ",
         imgSrc : "/icon/mbti/estj.png"
     };

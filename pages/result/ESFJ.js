@@ -5,11 +5,13 @@ export default function ESFJ() {
     const mbti = {
         mbtiName : "ESFJ",
         treeName : "인기있는 마당발 트리",
-        description : ["", "", "", "", ""],
-        carolSong : {
-            name : "",
-            reason : ""
-        },
+        description : [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         link : "/result/ESFJ",
         imgSrc : "/icon/mbti/esfj.png"
     };

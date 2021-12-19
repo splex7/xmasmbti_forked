@@ -16,7 +16,6 @@ export default function Home() {
                     property="og:description"
                     content="캐롤송으로 알아보는 크리스마스 트리 MBTI"
                 />
-                <meta property="og:image" content="thumbnail.png" />
             </Head>
 
             <main>

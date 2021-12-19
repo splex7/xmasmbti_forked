@@ -5,11 +5,13 @@ export default function ESFP() {
     const mbti = {
         mbtiName : "ESFP",
         treeName : "자유로운 워킹팜 트리",
-        description : ["", "", "", "", ""],
-        carolSong : {
-            name : "",
-            reason : ""
-        },
+        description : [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         link : "/result/ESFP",
         imgSrc : "/icon/mbti/esfp.png"
     };

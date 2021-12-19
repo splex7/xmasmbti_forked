@@ -5,11 +5,13 @@ export default function ISFP() {
     const mbti = {
         mbtiName : "ISFP",
         treeName : "마음이 따뜻한 예술가 트리",
-        description : ["", "", "", "", ""],
-        carolSong : {
-            name : "",
-            reason : ""
-        },
+        description : [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         link : "/result/ISFP",
         imgSrc : "/icon/mbti/isfp.png"
     };

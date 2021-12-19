@@ -51,11 +51,11 @@ export default function Stage() {
                     {stage == 12 && <Stage12 storage={storage}/>}
                 </div>
                 <div className={styles.btn_border}>
-                    {stage == 1 && <button className="btn btn-success" onClick={() => router.push('/')}>처음으로</button>}
+                    {stage == 1 && <button className="btn btn-danger" onClick={() => router.push('/')}>처음으로</button>}
                     {1 < stage && stage < 13 && <button className="btn btn-success" onClick={() => setStage(stage - 1)}>이전</button>}
                     <span>&nbsp;&nbsp;&nbsp;</span>
                     {0 < stage && stage < 12 && <button className="btn btn-success" onClick={() => setStage(stage + 1)}>다음</button>}
-                    {stage && stage == 12 && <button className="btn btn-success" onClick={() => viewResult(router)}>결과보기</button>}
+                    {stage && stage == 12 && <button className="btn btn-primary" onClick={() => viewResult(router)}>결과보기</button>}
                 </div>
             </main>
 

@@ -5,11 +5,13 @@ export default function ISTP() {
     const mbti = {
         mbtiName : "ISTP",
         treeName : "만사가 귀찮은 재간둥이 트리",
-        description : ["", "", "", "", ""],
-        carolSong : {
-            name : "",
-            reason : ""
-        },
+        description : [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         link : "/result/ISTP",
         imgSrc : "/icon/mbti/istp.png"
     };
