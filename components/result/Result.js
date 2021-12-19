@@ -3,6 +3,7 @@ import Footer from "@components/Footer";
 import React, {useState} from "react";
 import {useRouter} from "next/router";
 import styles from "@styles/Result.module.css";
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function Result({mbti}) {
     const router = useRouter();
@@ -10,18 +11,20 @@ export default function Result({mbti}) {
     const mbtiName = mbti.mbtiName;
     const treeName = mbti.treeName;
     const description = mbti.description;
-    const link = mbti.link;
     const imgSrc = mbti.imgSrc;
+
+    const link = "https://xmas-tree-mbti.netlify.app" + mbti.link;
+    const detail = mbtiName + " : " + treeName;
     return (
         <div>
             <Head>
                 <title>크리스마스 트리 MBTI</title>
                 <link rel="icon" href="/favicon.ico"/>
-                <meta property="og:url" content={"https://xmas-tree-mbti.netlify.app" + link} />
+                <meta property="og:url" content={link} />
                 <meta property="og:title" content={"크리스마스 트리 MBTI"} />
                 <meta
                     property="og:description"
-                    content={mbtiName + " : " + treeName}
+                    content={detail}
                 />
             </Head>
 
