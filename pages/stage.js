@@ -110,6 +110,5 @@ function viewResult(router) {
     } else {
         result += 'P';
     }
-    console.log("mbtiStorage // " + JSON.stringify(mbtiStorage));
     router.push('/result/' + result)
 }

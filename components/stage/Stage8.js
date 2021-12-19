@@ -8,25 +8,25 @@ export default function Stage8({storage}) {
             <div className={styles.wrapper}>
                 <ReactPlayer
                     className={styles.player}
-                    url={"https://youtu.be/##"}
+                    url={"https://youtu.be/sYd7QKruz9k"}
                     width="100%"
                     height="100%"
                 />
             </div>
             <div className={styles.question}>
-                문제8
+                좋아하는 사람과 쭉 친구로 지내다가 크리스마스에 고백할까 고민 중인 당신의 절친! 어떤 조언을 해줄까요?
             </div>
             <div name={"choice"} className={clicked == 1 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 1, 'N')}>
-                문항1
+                촉이 왔다 왔어! 왠지 잘 될 듯? 오늘은 크리스마스잖아~
             </div>
             <div name={"choice"} className={clicked == 2 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 2, 'S')}>
-                문항2
+                차일까봐 계속 걱정하는 것도 시간낭비! 다른 생각은 그만하고 그냥 고백만 생각해.
             </div>
             <div name={"choice"} className={clicked == 3 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 3, 'S')}>
-                문항3
+                평소 익숙하지 않고 예측하지 못했던 일은 사람을 불편하게 할 수 있어. 좀 더 신중해야 할 듯.
             </div>
             <div name={"choice"} className={clicked == 4 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 4, 'N')}>
-                문항3
+                차이면 그 친구랑 어떡하려고 그래. 어쩌면 이런 일, 저런 일, 그런 일이 생길 수도 있을 듯.
             </div>
         </>
     )

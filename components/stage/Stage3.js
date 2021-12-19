@@ -14,19 +14,19 @@ export default function Stage3({storage}) {
                 />
             </div>
             <div className={styles.question}>
-                문제3
+                당신은 코가 밝은 루돌프! 산타할아버지가 썰매를 끌어달라고 찾아왔어요. 당신의 반응은?
             </div>
             <div name={"choice"} className={clicked == 1 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 1, 'I')}>
-                문항1
+                네? 저 아세요?
             </div>
             <div name={"choice"} className={clicked == 2 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 2, 'E')}>
-                문항2
+                당신이 그 유명한 산타! 한번쯤 만나보고 싶었어요~
             </div>
             <div name={"choice"} className={clicked == 3 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 3, 'I')}>
-                문항3
+                코 때문에 주목받고 싶지 않아! 조심스럽게 거절한다.
             </div>
             <div name={"choice"} className={clicked == 4 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 4, 'E')}>
-                문항3
+                함께 썰매를 끌게 될 사슴 파티원들에 대해서 물어본다.
             </div>
         </>
     )

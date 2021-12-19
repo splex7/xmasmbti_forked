@@ -8,25 +8,25 @@ export default function Stage4({storage}) {
             <div className={styles.wrapper}>
                 <ReactPlayer
                     className={styles.player}
-                    url={"https://youtu.be/##"}
+                    url={"https://youtu.be/w14rSMl35ro"}
                     width="100%"
                     height="100%"
                 />
             </div>
             <div className={styles.question}>
-                문제4
+                당신의 크리스마스 계획은 어떻게 되나요?
             </div>
             <div name={"choice"} className={clicked == 1 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 1, 'P')}>
-                문항1
+                음... 그 날이 되어봐야 알지 않을까?
             </div>
             <div name={"choice"} className={clicked == 2 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 2, 'P')}>
-                문항2
+                적당히 맛있는 거 먹고 대충 친한 사람들 만나고 있을 듯. 작년 크리스마스 때도 그랬어.
             </div>
             <div name={"choice"} className={clicked == 3 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 3, 'J')}>
-                문항3
+                성수기라서 방을 구하기 어려울 수 있어! 최소 세달 전부터 호텔 룸을 알아본다.
             </div>
             <div name={"choice"} className={clicked == 4 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 4, 'J')}>
-                문항3
+                크리스마스엔 집콕이 최고! 나를 위한 영화와 시원한 맥주, 맛있는 팝콘을 이미 준비해두었지~
             </div>
         </>
     )

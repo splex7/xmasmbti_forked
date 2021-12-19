@@ -8,25 +8,25 @@ export default function Stage10({storage}) {
             <div className={styles.wrapper}>
                 <ReactPlayer
                     className={styles.player}
-                    url={"https://youtu.be/##"}
+                    url={"https://youtu.be/VDmIddF7DfQ"}
                     width="100%"
                     height="100%"
                 />
             </div>
             <div className={styles.question}>
-                문제10
+                크리스마스를 즐겁게 보내고 있는 당신! 무엇으로 기뻐하고 있을까요?
             </div>
             <div name={"choice"} className={clicked == 1 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 1, 'P')}>
-                문항1
+                우연히 길을 걷다 들어가게 된 음식점. 찾았다, 내 인생 맛집!
             </div>
             <div name={"choice"} className={clicked == 2 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 2, 'J')}>
-                문항2
+                내가 생각한대로 술술 잘 풀려가는 근사한 크리스마스. 모든 게 계획대로야~
             </div>
             <div name={"choice"} className={clicked == 3 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 3, 'P')}>
-                문항3
+                크리스마스 파티에서 참여하게 된 뜻밖의 이색 이벤트. 갑작스럽지만 흥미로워~
             </div>
             <div name={"choice"} className={clicked == 4 ? styles.choiced : styles.choice} onClick={() => recordMbti(storage, 4, 'J')}>
-                문항3
+                이 추운 날씨에 밖에서 줄 서 있는 사람들. 미리 레스토랑을 예약해둔 멋진 나.
             </div>
         </>
     )
