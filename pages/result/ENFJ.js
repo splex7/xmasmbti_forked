@@ -1,20 +1,19 @@
-import Head from 'next/head'
-import Footer from '@components/Footer'
+import Result from '@components/result/Result'
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default function ENFJ() {
+    const mbti = {
+        mbtiName : "ENFJ",
+        treeName : "불타는 열정만수르 트리",
+        description : ["", "", "", "", ""],
+        carolSong : {
+            name : "",
+            reason : ""
+        },
+        link : "/result/ENFJ",
+        imgSrc : "/icon/mbti/enfj.png"
+    };
     return (
-        <div className="container">
-            <Head>
-                <title>크리스마스 트리 MBTI</title>
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
-
-            <main>
-                ENFJ
-            </main>
-
-            <Footer/>
-        </div>
+        <Result mbti = {mbti} />
     )
 }

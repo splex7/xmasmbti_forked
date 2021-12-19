@@ -1,20 +1,19 @@
-import Head from 'next/head'
-import Footer from '@components/Footer'
+import Result from '@components/result/Result'
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default function INTJ() {
+    const mbti = {
+        mbtiName : "INTJ",
+        treeName : "혼자서도 잘 자라는 인공 트리",
+        description : ["", "", "", "", ""],
+        carolSong : {
+            name : "",
+            reason : ""
+        },
+        link : "/result/INTJ",
+        imgSrc : "/icon/mbti/intj.png"
+    };
     return (
-        <div className="container">
-            <Head>
-                <title>크리스마스 트리 MBTI</title>
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
-
-            <main>
-                INTJ
-            </main>
-
-            <Footer/>
-        </div>
+        <Result mbti = {mbti} />
     )
 }

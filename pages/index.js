@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Main from '@components/Main'
+import SnsShare from "@components/util/SnsShare";
 import Footer from '@components/Footer'
 import 'bootstrap/dist/css/bootstrap.css';
 

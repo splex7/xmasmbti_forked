@@ -1,20 +1,19 @@
-import Head from 'next/head'
-import Footer from '@components/Footer'
+import Result from '@components/result/Result'
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default function ESTJ() {
+    const mbti = {
+        mbtiName : "ESTJ",
+        treeName : "실리에 밝은 카이저 트리",
+        description : ["", "", "", "", ""],
+        carolSong : {
+            name : "",
+            reason : ""
+        },
+        link : "/result/ESTJ",
+        imgSrc : "/icon/mbti/estj.png"
+    };
     return (
-        <div className="container">
-            <Head>
-                <title>크리스마스 트리 MBTI</title>
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
-
-            <main>
-                ESTJ
-            </main>
-
-            <Footer/>
-        </div>
+        <Result mbti = {mbti} />
     )
 }

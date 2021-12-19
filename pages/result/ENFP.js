@@ -1,20 +1,19 @@
-import Head from 'next/head'
-import Footer from '@components/Footer'
+import Result from '@components/result/Result'
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default function ENFP() {
+    const mbti = {
+        mbtiName : "ENFP",
+        treeName : "활력 넘치는 에너자이저 트리",
+        description : ["", "", "", "", ""],
+        carolSong : {
+            name : "",
+            reason : ""
+        },
+        link : "/result/ENFP",
+        imgSrc : "/icon/mbti/enfp.png"
+    };
     return (
-        <div className="container">
-            <Head>
-                <title>크리스마스 트리 MBTI</title>
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
-
-            <main>
-                ENFP
-            </main>
-
-            <Footer/>
-        </div>
+        <Result mbti = {mbti} />
     )
 }

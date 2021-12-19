@@ -1,5 +1,5 @@
 import ReactPlayer from "react-player";
-import styles from '@styles/components/Stage.module.css';
+import styles from '@styles/Stage.module.css';
 
 export default function Stage7({storage}) {
     const clicked = storage["jp"][1][0];

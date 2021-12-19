@@ -1,8 +1,14 @@
+/* pages/style.js */
 .stage {
     width: 100%;
     margin: auto;
 }
 
+.btn_border {
+    padding-bottom: 10px;
+}
+
+/* components/stage/StageN.js */
 .wrapper {
     position: relative;
     padding-top: 56.25%

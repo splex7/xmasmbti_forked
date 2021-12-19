@@ -1,20 +1,19 @@
-import Head from 'next/head'
-import Footer from '@components/Footer'
+import Result from '@components/result/Result'
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default function ISFP() {
+    const mbti = {
+        mbtiName : "ISFP",
+        treeName : "마음이 따뜻한 예술가 트리",
+        description : ["", "", "", "", ""],
+        carolSong : {
+            name : "",
+            reason : ""
+        },
+        link : "/result/ISFP",
+        imgSrc : "/icon/mbti/isfp.png"
+    };
     return (
-        <div className="container">
-            <Head>
-                <title>크리스마스 트리 MBTI</title>
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
-
-            <main>
-                ISFP
-            </main>
-
-            <Footer/>
-        </div>
+        <Result mbti = {mbti} />
     )
 }

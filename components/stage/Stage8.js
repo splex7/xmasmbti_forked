@@ -1,5 +1,5 @@
 import ReactPlayer from "react-player";
-import styles from '@styles/components/Stage.module.css';
+import styles from '@styles/Stage.module.css';
 
 export default function Stage8({storage}) {
     const clicked = storage["sn"][1][0];

@@ -13,7 +13,7 @@ import Stage9 from "@components/stage/Stage9";
 import Stage10 from "@components/stage/Stage10";
 import Stage11 from "@components/stage/Stage11";
 import Stage12 from "@components/stage/Stage12";
-import styles from '@styles/components/Stage.module.css'
+import styles from '@styles/Stage.module.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import {useRouter} from "next/router";
 
@@ -23,8 +23,6 @@ let mbtiStorage = {
     tf: [[0, 0], [0, 0], [0, 0]],
     jp: [[0, 0], [0, 0], [0, 0]]
 };
-
-let result = '';
 
 export default function Stage() {
     const [stage, setStage] = useState(1);
@@ -37,23 +35,25 @@ export default function Stage() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <main className={styles.main}>
+            <main>
                 <div className={styles.stage}>
-                    {stage == 1 && <Stage1 storage = {storage} />}
-                    {stage == 2 && <Stage2 storage = {storage}/>}
-                    {stage == 3 && <Stage3 storage = {storage}/>}
-                    {stage == 4 && <Stage4 storage = {storage}/>}
-                    {stage == 5 && <Stage5 storage = {storage}/>}
-                    {stage == 6 && <Stage6 storage = {storage}/>}
-                    {stage == 7 && <Stage7 storage = {storage}/>}
-                    {stage == 8 && <Stage8 storage = {storage}/>}
-                    {stage == 9 && <Stage9 storage = {storage}/>}
-                    {stage == 10 && <Stage10 storage = {storage}/>}
-                    {stage == 11 && <Stage11 storage = {storage}/>}
-                    {stage == 12 && <Stage12 storage = {storage}/>}
+                    {stage == 1 && <Stage1 storage={storage}/>}
+                    {stage == 2 && <Stage2 storage={storage}/>}
+                    {stage == 3 && <Stage3 storage={storage}/>}
+                    {stage == 4 && <Stage4 storage={storage}/>}
+                    {stage == 5 && <Stage5 storage={storage}/>}
+                    {stage == 6 && <Stage6 storage={storage}/>}
+                    {stage == 7 && <Stage7 storage={storage}/>}
+                    {stage == 8 && <Stage8 storage={storage}/>}
+                    {stage == 9 && <Stage9 storage={storage}/>}
+                    {stage == 10 && <Stage10 storage={storage}/>}
+                    {stage == 11 && <Stage11 storage={storage}/>}
+                    {stage == 12 && <Stage12 storage={storage}/>}
                 </div>
-                <div>
+                <div className={styles.btn_border}>
+                    {stage == 1 && <button className="btn btn-success" onClick={() => router.push('/')}>처음으로</button>}
                     {1 < stage && stage < 13 && <button className="btn btn-success" onClick={() => setStage(stage - 1)}>이전</button>}
+                    <span>&nbsp;&nbsp;&nbsp;</span>
                     {0 < stage && stage < 12 && <button className="btn btn-success" onClick={() => setStage(stage + 1)}>다음</button>}
                     {stage && stage == 12 && <button className="btn btn-success" onClick={() => viewResult(router)}>결과보기</button>}
                 </div>
@@ -79,6 +79,8 @@ function viewResult(router) {
     }
 
     /* 결과 산출 및 결과 페이지 이동 */
+    let result = '';
+
     let sumIE = 0;
     let sumSN = 0;
     let sumTF = 0;
