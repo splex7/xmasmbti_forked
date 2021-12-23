@@ -2,12 +2,24 @@ import {useRouter} from "next/router";
 import Footer from "@components/Footer";
 import styles from "@styles/Result.module.css";
 import 'bootstrap/dist/css/bootstrap.css';
+import Head from "next/head";
 
 export default function result() {
     const router = useRouter();
     return (
         <>
             <div className="container">
+                <Head>
+                    <title>크리스마스 트리 MBTI</title>
+                    <link rel="icon" href="/favicon.ico"/>
+                    <meta property="og:url" content="https://xmas-tree-mbti.netlify.app/" />
+                    <meta property="og:title" content="크리스마스 트리 MBTI" />
+                    <meta
+                        property="og:description"
+                        content="캐롤송으로 알아보는 크리스마스 트리 MBTI"
+                    />
+                </Head>
+
                 <main>
                     <h2>
                         <b>크리스마스 트리 MBTI</b>
@@ -25,24 +37,24 @@ export default function result() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ISTJ')}>
+                                        <div onClick={() => router.push('/result/ISTJ')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/istj.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ISFJ')}>
+                                        <div onClick={() => router.push('/result/ISFJ')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/isfj.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/INFJ')}>
+                                        <div onClick={() => router.push('/result/INFJ')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/infj.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/INTJ')}>
+                                        <div onClick={() => router.push('/result/INTJ')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/intj.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                 </tr>
 
@@ -54,24 +66,24 @@ export default function result() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ISTP')}>
+                                        <div onClick={() => router.push('/result/ISTP')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/istp.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ISFP')}>
+                                        <div onClick={() => router.push('/result/ISFP')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/isfp.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/INFP')}>
+                                        <div onClick={() => router.push('/result/INFP')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/infp.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/INTP')}>
+                                        <div onClick={() => router.push('/result/INTP')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/intp.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                 </tr>
 
@@ -83,24 +95,24 @@ export default function result() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ESTP')}>
+                                        <div onClick={() => router.push('/result/ESTP')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/estp.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ESFP')}>
+                                        <div onClick={() => router.push('/result/ESFP')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/esfp.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ENFP')}>
+                                        <div onClick={() => router.push('/result/ENFP')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/enfp.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ENTP')}>
+                                        <div onClick={() => router.push('/result/ENTP')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/entp.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                 </tr>
 
@@ -112,24 +124,24 @@ export default function result() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ESTJ')}>
+                                        <div onClick={() => router.push('/result/ESTJ')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/estj.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ESFJ')}>
+                                        <div onClick={() => router.push('/result/ESFJ')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/esfj.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ENFJ')}>
+                                        <div onClick={() => router.push('/result/ENFJ')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/enfj.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="#!" onClick={() => router.push('/result/ENTJ')}>
+                                        <div onClick={() => router.push('/result/ENTJ')} className={styles.mbti_type_img}>
                                             <img src={"/icon/mbti/entj.png"} width={"50px"}/>
-                                        </a>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>

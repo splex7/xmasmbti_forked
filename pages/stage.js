@@ -56,6 +56,7 @@ export default function Stage() {
                     <span>&nbsp;&nbsp;&nbsp;</span>
                     {0 < stage && stage < 12 && <button className="btn btn-success" onClick={() => setStage(stage + 1)}>다음</button>}
                     {stage && stage == 12 && <button className="btn btn-primary" onClick={() => viewResult(router)}>결과보기</button>}
+                    <div className={styles.btn_bottom}></div>
                 </div>
             </main>
 

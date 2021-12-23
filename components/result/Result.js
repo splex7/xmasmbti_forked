@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "@components/Footer";
-import React, {useState} from "react";
+import SnsShare from "@components/util/SnsShare";
+import React, {useState, useEffect} from "react";
 import {useRouter} from "next/router";
 import styles from "@styles/Result.module.css";
 import 'bootstrap/dist/css/bootstrap.css';
@@ -15,6 +16,7 @@ export default function Result({mbti}) {
 
     const link = "https://xmas-tree-mbti.netlify.app" + mbti.link;
     const detail = mbtiName + " : " + treeName;
+
     return (
         <div>
             <Head>
@@ -53,6 +55,7 @@ export default function Result({mbti}) {
                     <span>&nbsp;</span>
                     <button className="btn btn-primary" onClick={() => router.push('/result')}>모든 유형 보기</button>
                 </div>
+                <SnsShare link = {link} />
             </main>
 
             <Footer/>
