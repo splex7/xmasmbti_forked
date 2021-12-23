@@ -19,7 +19,7 @@ class MyDocument extends Document {
                     property="og:description"
                     content="캐롤송으로 알아보는 크리스마스 트리 MBTI"
                 />
-                <meta name="google-site-verification" content="Usfifz9p-P3Bsy-nRNTuwTW_b-vaUBbKUWQT_Cemq8s" />
+                <meta name="google-site-verification" content="MjZJWWkRvcSKlK5KCZQQXNKZcYsVoXjpQLMG_fGhOmo" />
                 <meta name="naver-site-verification" content="1d7fc1b1fb61c20ab4c416ec8590a87417481e1f" />
                 <script
                     async
