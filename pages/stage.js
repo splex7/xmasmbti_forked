@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Head from 'next/head'
 import Footer from '@components/Footer'
 import Stage1 from "@components/stage/Stage1";
 import Stage2 from "@components/stage/Stage2";
@@ -30,11 +29,6 @@ export default function Stage() {
     const router = useRouter();
     return (
         <div className="container">
-            <Head>
-                <title>크리스마스 트리 MBTI</title>
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
-
             <main>
                 <div className={styles.stage}>
                     {stage == 1 && <Stage1 storage={storage}/>}

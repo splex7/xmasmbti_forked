@@ -2,24 +2,12 @@ import {useRouter} from "next/router";
 import Footer from "@components/Footer";
 import styles from "@styles/Result.module.css";
 import 'bootstrap/dist/css/bootstrap.css';
-import Head from "next/head";
 
 export default function result() {
     const router = useRouter();
     return (
         <>
             <div className="container">
-                <Head>
-                    <title>크리스마스 트리 MBTI</title>
-                    <link rel="icon" href="/favicon.ico"/>
-                    <meta property="og:url" content="https://xmas-tree-mbti.netlify.app/" />
-                    <meta property="og:title" content="크리스마스 트리 MBTI" />
-                    <meta
-                        property="og:description"
-                        content="캐롤송으로 알아보는 크리스마스 트리 MBTI"
-                    />
-                </Head>
-
                 <main>
                     <h2>
                         <b>크리스마스 트리 MBTI</b>
