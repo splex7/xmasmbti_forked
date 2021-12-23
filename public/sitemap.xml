@@ -6,11 +6,19 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+  <url>
+    <loc>https://xmas-tree-mbti.netlify.app/</loc>
+    <priority> 1.00 </ priority>
+  </url>
 
-<url>
-  <loc>https://xmas-tree-mbti.netlify.app/</loc>
-  <lastmod>2021-12-23T15:34:44+00:00</lastmod>
-</url>
+  <url>
+    <loc>https://xmas-tree-mbti.netlify.app/result</loc>
+    <priority> 0.80 </ priority>
+  </url>
 
+  <url>
+    <loc>https://xmas-tree-mbti.netlify.app/stage</loc>
+    <priority> 0.60 </ priority>
+  </url>
 
 </urlset>
