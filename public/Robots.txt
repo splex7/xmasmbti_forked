@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://xmas-tree-mbti.netlify.app/sitemap.xml
