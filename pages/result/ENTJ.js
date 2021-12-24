@@ -12,7 +12,7 @@ export default function ENTJ() {
             "사람들과 같이 있을 때와 혼자 있을 때 모습이 달라요. 혼자 있을 때는 늘어지고 망상도 많이 해요.",
             "일을 할 때 완벽하게 처리하는 것을 추구해요. 일을 못하는 사람에게는 가차없기도 해요."
         ],
-        link : "/result/INFJ",
+        link : "/result/ENTJ",
         imgSrc : "/icon/mbti/entj.png"
     };
     return (
